@@ -3,16 +3,16 @@
 
 Vue School - Vue JS - Vue.js Fundamentals
 
-- [ ] #1 the vue instance
-- [ ] #2 attribute binding 
-- [ ] #3 Conditional Rendering 
-- [ ] #4 List Rendering  
-- [ ] #5 Event Handling 
-- [ ] #6 Class and Style Binding   
-- [ ] #7 Computed Properties   
-- [ ] #8 Components
-- [ ] #9 Communicating Events  
-- [ ] #10 Forms 
+- [ ] #1 Getting Started With Vue.JS
+- [ ] #2 Vue.js Template Syntax And Expressions  
+- [ ] #3 List Rendering  
+- [ ] #4 User Inputs and Vue DevTools  
+- [ ] #5 User Events 
+- [ ] #6 Vue Methods  
+- [ ] #7 Conditional Rendering    
+- [ ] #8 Attribute Bindings
+- [ ] #9 Dynamic Classes   
+- [ ] #10 Computed Properties 
 
 ---
 
