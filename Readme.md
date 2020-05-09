@@ -6,8 +6,8 @@ Vue School - Vue JS - Vue.js Fundamentals
 - [x] #1 Getting Started With Vue.JS
 - [x] #2 Vue.js Template Syntax And Expressions  
 - [x] #3 List Rendering  
-- [ ] #4 User Inputs and Vue DevTools  
-- [ ] #5 User Events 
+- [x] #4 User Inputs and Vue DevTools  
+- [x] #5 User Events 
 - [ ] #6 Vue Methods  
 - [ ] #7 Conditional Rendering    
 - [ ] #8 Attribute Bindings
