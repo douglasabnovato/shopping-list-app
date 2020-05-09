@@ -8,7 +8,11 @@
     <body>
         <div id="shopping-list">
             <h1>{{ signature }}</h1>
-            <input v-model="header">            
+            <h4>{{ header ? header : 'welcome' }}</h4>
+            <input type="text" v-model="header">  
+            <ul>
+                <li v-for="item in itens">{{ item }}</li>
+            </ul>          
         </div>
 
         <script src="https://unpkg.com/vue"></script>
@@ -16,10 +20,15 @@
             var shoppingList = new Vue({
                 el: '#shopping-list',
                 data: {
-                    header: 'Vue is ready to party',
-                    signature: '@douglasabnovato'
+                    header:     null,
+                    signature: '@douglasabnovato',
+                    itens: [
+                        '10 party hats',
+                        '2 board games',
+                        '20 cups'
+                    ]
                 }
-            })
+            });
         </script>
     </body>
 </html> 
