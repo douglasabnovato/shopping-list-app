@@ -6,17 +6,20 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div id="shopping-list">
-            <h2>Welcome to Shopping List !</h2>
-            <div class="add-item-form">
+        <div id="shopping-list">   
+            <div class="header">
+                <h1>{{ header.toLocaleUpperCase() }}</h1>
+                <button v-if="state === 'default'" class="btn btn-primary">Add Item</button>
+                <button v-else class="btn btn-cancel">Cancel</button>
+            </div>         
+            <div v-if="state === 'edit'" class="add-item-form">
                 <input type="text" v-model="newItem" placeholder="Add an item" v-on:keyup.enter="saveItem">  
-                <button class="btn btn-primary" v-on:click="saveItem">
-                    Save Item
-                </button>
+                <button class="btn btn-primary" v-on:click="saveItem">Save Item </button>
             </div>            
             <ul>
                 <li v-for="item in items">{{ item }}</li>
-            </ul>          
+            </ul> 
+            <p v-if="items.length === 0">Nice job! You're bought all your items. </p>         
         </div>
 
         <script src="https://unpkg.com/vue"></script>
@@ -24,13 +27,10 @@
             var shoppingList = new Vue({
                 el: '#shopping-list',
                 data: {
-                    header:     null,
+                    state: 'default',
+                    header: 'shopping list app',
                     newItem: '',
-                    items: [
-                        '10 party hats',
-                        '2 board games',
-                        '20 cups'
-                    ]
+                    items: []
                 },
                 methods: {
                     saveItem: function(){
