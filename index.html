@@ -8,10 +8,9 @@
     <body>
         <div id="shopping-list">
             <h2>Welcome to Shopping List !</h2>
-            <h4>example: 1 element of list</h4>
             <div class="add-item-form">
-                <input type="text" v-model="newItem" placeholder="Add an item" v-on:keyup.enter="items.push(newItem)">  
-                <button class="btn btn-primary" v-on:click="items.push(newItem)">
+                <input type="text" v-model="newItem" placeholder="Add an item" v-on:keyup.enter="saveItem">  
+                <button class="btn btn-primary" v-on:click="saveItem">
                     Save Item
                 </button>
             </div>            
@@ -32,6 +31,12 @@
                         '2 board games',
                         '20 cups'
                     ]
+                },
+                methods: {
+                    saveItem: function(){
+                        this.items.push(this.newItem);
+                        this.newItem = '';
+                    }
                 }
             });
         </script>
