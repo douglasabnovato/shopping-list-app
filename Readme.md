@@ -8,9 +8,9 @@ Vue School - Vue JS - Vue.js Fundamentals
 - [x] #3 List Rendering  
 - [x] #4 User Inputs and Vue DevTools  
 - [x] #5 User Events 
-- [ ] #6 Vue Methods  
-- [ ] #7 Conditional Rendering    
-- [ ] #8 Attribute Bindings
+- [x] #6 Vue Methods  
+- [x] #7 Conditional Rendering    
+- [x] #8 Attribute Bindings
 - [ ] #9 Dynamic Classes   
 - [ ] #10 Computed Properties 
 
