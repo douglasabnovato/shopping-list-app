@@ -11,8 +11,8 @@ Vue School - Vue JS - Vue.js Fundamentals
 - [x] #6 Vue Methods  
 - [x] #7 Conditional Rendering    
 - [x] #8 Attribute Bindings
-- [ ] #9 Dynamic Classes   
-- [ ] #10 Computed Properties 
+- [x] #9 Dynamic Classes   
+- [x] #10 Computed Properties 
 
 ---
 
